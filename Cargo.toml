@@ -1,0 +1,31 @@
+[package]
+name = "enhanced_evoli_ki"
+version = "0.1.0"
+edition = "2021"
+authors = ["Evoli-Entwickler"]
+description = "Erweiterte Evoli-KI mit Internetzugang und 1TB Speicher"
+
+# Hauptbinary
+[[bin]]
+name = "enhanced_evoli_ki"
+path = "src/main.rs"
+
+# Kernmodul
+[lib]
+name = "enhanced_evoli_kern"
+path = "src/Evoli_Kern.rs"
+
+[dependencies]
+tokio = { version = "1.28", features = ["full"] }
+reqwest = { version = "0.11", features = ["json"] }
+rand = "0.8"
+chrono = "0.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Für Systemressourcen-Monitoring
+sysinfo = "0.29"
+
+# Optional: Für verbesserte Protokollierung
+log = "0.4"
+env_logger = "0.10"
