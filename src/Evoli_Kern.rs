@@ -1,4 +1,4 @@
-// src/Evoli_Kern.rs - Erweiterter evolutionärer Kern mit Internetzugang und offener Evolution
+// src/Evoli_Kern.rs - Erweiterter Kern mit Internetzugang und offener Evolution
 use std::fs::{self, File};
 use std::io::Write;
 use std::path::{Path, PathBuf};
